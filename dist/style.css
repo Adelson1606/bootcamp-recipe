@@ -1,6 +1,8 @@
 body {
   background-color: antiquewhite;
   font-family: 'Playfair Display SC', serif;
+  width: 100vw;
+  /* height: 100vw; */
 }
 
 .input-container {
@@ -33,7 +35,7 @@ input#input-ingredient {
 }
 
 img.photo {
-    max-width: 350px;
+    width: 50%;
 }
 
 .title {
