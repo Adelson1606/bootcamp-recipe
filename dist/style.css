@@ -3,6 +3,7 @@ body {
   font-family: 'Playfair Display SC', serif;
   /* width: 100vw; */
   /* height: 100vw; */
+  margin: 1%;
 }
 
 .input-container {
@@ -35,7 +36,7 @@ input#input-ingredient {
 }
 
 img.photo {
-  width: 50%;
+  width: 100%;
 }
 
 .title {
@@ -50,7 +51,7 @@ img.photo {
 
 ul {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 3vw;
 }
 
@@ -62,8 +63,7 @@ div {}
 }
 
 @media (max-width: 700px) {
-  .results {
-    /* background-color: burlywood; */
-    /* width: 100%; */
+  ul, .results {
+    display: block;
   }
 }
