@@ -2,7 +2,7 @@ class Renderer {
 
   render (data) {
     $('.results').empty()
-    if (data.length === 0) { 
+    if (data.length === 0) { //if data is emty arr
       $('.error').append(`
         <div> wrong input! Try another request like: oil, cheese, tomato, etc.</div>
         `) 
