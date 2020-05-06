@@ -15,6 +15,7 @@
     <button id='searchBtn' onclick=show()>Take recipes</button>
   </div>
   <div class='results'></div>
+  <div class='error'></div>
 
   <script id="template" type="text/x-handlebars-template">
     {{#each allRecipes}}
@@ -27,7 +28,6 @@
           <li>{{this}}</li>
         {{/each}}
         </ul>
-    
       </div>
      
     </div>
