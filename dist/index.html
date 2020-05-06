@@ -8,11 +8,28 @@
 </head>
 
 <body>
+  <div class='input-container'>
+    <input id='input-ingredient' placeholder="Input your ingredient here">
+    <button id='searchBtn' onclick=show()>Take recipes</button>
+  </div>
+  <div class='results'></div>
+
+  <script id="template" type="text/x-handlebars-template">
+    {{#each allRecipes}}
+    <div class='recipe-container'>
+      <div class='title'>{{title}}</div>
+      <div class='ingredients'>
+        {{ingredients}}
+      </div>
+      <img class='photo' src={{thumbnail}}>
+      <div class='video'><a href={{href}}>Here you can watch youtube video</a></div>
+    </div>
+    {{/each}}
+  </script>
 
 
-
-  <script src="/node_modules/handlebars/dist/handlebars.js"></script>
-  <script src="/node_modules/jquery/dist/jquery.js"></script>
+  <script src="/handlebars/dist/handlebars.js"></script>
+  <script src="/jquery/dist/jquery.js"></script>
   <script src="main.js"></script>
 </body>
 

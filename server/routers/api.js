@@ -9,9 +9,11 @@ router.get('/sanity', function (request, response) {
 router.get('/recipes/:ingredient', function (req, res) {
   const ingredient = req.params.ingredient
   urllib.request(`https://recipes-goodness.herokuapp.com/recipes/${ingredient}`, function (_err, data) {
-    console.log(data.toString())
+    const recipes = JSON.parse(data.toString()) 
+    const allRecipes = recipes.results
+    res.send(allRecipes)
   }) 
-  res.send('take data')
+  
 })
 
 module.exports = router
