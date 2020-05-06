@@ -6,3 +6,9 @@ const show = function () {
     renderer.render({ allRecipes })
   })
 }
+
+
+// $('.photo').on('click', function () {
+//   const firsIngr = $(this).closest(".ingredients")
+//   console.log(firsIngr)
+// })

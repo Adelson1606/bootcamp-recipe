@@ -4,7 +4,7 @@ class Renderer {
     $('.results').empty()
     const source = $('#template').html()
     const template = Handlebars.compile(source)
-    const newHTML = template( data )
+    const newHTML = template(data)
     $('.results').append(newHTML)
   }
   

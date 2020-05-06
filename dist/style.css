@@ -1,0 +1,41 @@
+body {
+  background-color: antiquewhite;
+  font-family: 'Playfair Display SC', serif;
+}
+
+.input-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+button#searchBtn {
+  margin: 0 10px;
+  /* border: 1px solid; */
+}
+
+input#input-ingredient {
+  padding: 15px;
+}
+
+.recipe-container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin: 10px;
+  background-color: #e0bf368a;
+  padding: 10px;
+}
+
+img.photo {
+    width: 350px;
+}
+
+.title {
+    font-size: x-large;
+    font-weight: bold;
+}

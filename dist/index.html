@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Viga&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
   <title>Nika's recipes</title>
 </head>
 
@@ -17,11 +19,14 @@
   <script id="template" type="text/x-handlebars-template">
     {{#each allRecipes}}
     <div class='recipe-container'>
-      <div class='title'><a href={{href}}>{{title}}</a></div>
-      <div class='ingredients'>
-        {{ingredients}}
+      <div class='title'><a href={{href}}>{{title}}</a></div> 
+      <img class='photo' src={{thumbnail}} >
+      <div class='ingredients'><p>Ingredients:</p>\
+        {{#each ingredients}}
+        
+        {{/each}}
       </div>
-      <img class='photo' src={{thumbnail}}>
+     
     </div>
     {{/each}}
   </script>
