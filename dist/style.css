@@ -1,7 +1,7 @@
 body {
   background-color: antiquewhite;
   font-family: 'Playfair Display SC', serif;
-  width: 100vw;
+  /* width: 100vw; */
   /* height: 100vw; */
 }
 
@@ -29,34 +29,41 @@ input#input-ingredient {
   grid-template-rows: 1fr 5fr 5fr;
   justify-items: center;
   align-items: center;
-  margin: 10px;
+  margin: 2vw;
   background-color: #e0bf368a;
-  padding: 10px;
+  padding: 1vw;
 }
 
 img.photo {
-    width: 50%;
+  width: 50%;
 }
 
 .title {
-    font-size: x-large;
-    font-weight: bold;
+  font-size: x-large;
+  font-weight: bold;
 }
 
 .ingredients {
-    /* display: grid; */
-    /* grid-template-columns: repeat(4,1fr); */
+  /* display: grid; */
+  /* grid-template-columns: repeat(4,1fr); */
 }
 
 ul {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-column-gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 3vw;
 }
 
 div {}
 
 .error {
-    color: red;
-    font-weight: bold;
+  color: red;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .results {
+    /* background-color: burlywood; */
+    /* width: 100%; */
+  }
 }
