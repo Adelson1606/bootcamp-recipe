@@ -2,8 +2,8 @@ const renderer = new Renderer()
 
 const show = function () {
   const input = $('#input-ingredient').val().toLowerCase()
-  $.get(`recipes/${input}`, function (allRecipes) {
-    renderer.render({ allRecipes })  
+  $.get(`recipes/${input}`, function (results) {
+    renderer.render(results)  
   })
 }
 
